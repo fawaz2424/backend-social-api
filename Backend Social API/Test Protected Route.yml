@@ -1,0 +1,18 @@
+info:
+  name: Test Protected Route
+  type: http
+  seq: 12
+
+http:
+  method: GET
+  url: http://localhost:3000/api/users
+  headers:
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFhNWNmMTRkZDQ1ZjhkYzVhMmZhYzUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc3Mjc3MjgxOCwiZXhwIjoxNzcyODU5MjE4fQ.pFQtZV_-cNyeC8J3v3cepZPBfV3ow3eoLlzEYFauoaQ
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

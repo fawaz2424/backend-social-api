@@ -1,0 +1,25 @@
+info:
+  name: create post request header
+  type: http
+  seq: 5
+
+http:
+  method: POST
+  url: http://localhost:3000/api/posts
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWFhNWNmMTRkZDQ1ZjhkYzVhMmZhYzUiLCJyb2xlIjoidXNlciIsImlhdCI6MTc3Mjg0ODY2OSwiZXhwIjoxNzcyOTM1MDY5fQ.vHe0aMFs_5T4knAh9MZUBeiOUTSABlgZQ1azRBf9vsA
+  body:
+    type: json
+    data: |-
+      {
+        "title": "My first forum post",
+        "content": "This is my first post in the forum backend project."
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
